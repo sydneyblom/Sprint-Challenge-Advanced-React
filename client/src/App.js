@@ -21,7 +21,7 @@ class App extends React.Component {
           players: res.data
         })
       })
-      .catch(err => alert(err));
+
   }
 
   render() {
