@@ -22,10 +22,20 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Why would you use class component over function components (removing hooks from the question)?
-- [ ] Name three lifecycle methods and their purposes.
-- [ ] What is the purpose of a custom hook?
-- [ ] Why is it important to test our apps?
+- [X] Why would you use class component over function components (removing hooks from the question)?
+If your component needs to maintain state class components can be helpful. Since it maintains it own data with state you can pass state from one component to the next. This can be useful for example if you want to choose for it to update or not.
+- [X] Name three lifecycle methods and their purposes.
+Constructor-
+This passes all the initial data the component needs to render, this includes props.
+
+Render- The ruction is there to return what your component will render to the screen. It is required for class component. It spans across multiple phases and it returns the same thing each time it is called.
+
+componentDidMount-
+This is where the data is loaded. It’s where you can load everything you couldn’t without a Dom. This is where we set state, which will force a re-render of the component. asynchronous actions like fetching data should be performed here for this reason.
+- [X] What is the purpose of a custom hook?
+It allows you to re-use stateful logic throughout your project. It helps us keep the code dry and ultimately saves us time but allowing us to share and pick and choose logic we want to share across components
+- [X] Why is it important to test our apps?
+Overall it saves us time to run unit tests during development, it is validating our code is working as it should. It can help catch bugs, make sure the code quality is good, if we have to refactor it is a built in safety net. Overall it helps us write better code as it checks for bugs or errors along the way.
 
 ## Project Set Up
 
