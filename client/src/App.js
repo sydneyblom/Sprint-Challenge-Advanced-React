@@ -3,6 +3,7 @@ import './App.css';
 
 import axios from 'axios';
 import PlayerCard from './components/PlayerCard';
+import Navbar from './components/Navbar';
 
 class App extends React.Component {
   constructor() { 
@@ -26,6 +27,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+
+      <Navbar />
      {this.state.players.map(player => {
        return (
         <PlayerCard name={player.name} country={player.country} searches={player.searches} />
