@@ -12,6 +12,5 @@ test('renders without crashing', () => {
 test('Page header', () => {
   const { getByTestId } = render(<App />);
 
-  // assert that the "lions" header is on the DOM
   getByTestId(/card-header/i);
 });
