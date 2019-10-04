@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 
@@ -11,7 +12,7 @@
 }
 
 .dark-mode__toggle {
-  background: gray; 
+  background: lightblue;
   border-radius: 50px;
   border: 1px solid black;
   height: 20px;
@@ -20,7 +21,7 @@
 }
 
 .toggle {
-  background: black; 
+  background: slategray;
   border-radius: 50px;
   height: 18px;
   left: 0;
@@ -36,4 +37,5 @@
 .dark-mode {
   color: #fff;
   background-color: #313843;
+
 }
